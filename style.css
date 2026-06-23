@@ -1,0 +1,245 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body:before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url(Academia.png);
+    background-size: cover;
+    filter: blur(8px);
+}
+
+.botao-clicador {
+    background: none;
+    border: none;
+    display: block;
+    margin: auto;
+    position: relative;
+}
+
+.botao-clicador img {
+    width: 500px;
+    height: auto;
+}
+
+.botao-clicador:active img {
+    transform: scale(0.97);
+}
+
+.upgrade-genin {
+    background: none;
+    border: none;
+    display: block;
+    padding: 0;
+    box-shadow: 0 15px 20px 0 rgba(0,0,0,0.6);
+}
+
+.upgrade-genin img {
+    width: 200px;
+    height: auto;
+    display: block;
+}
+
+.upgrade-genin:active {
+    transform: scale(0.97);
+}
+
+.upgrade-chunin {
+    background: none;
+    border: none;
+    display: block;
+    padding: 0;
+    box-shadow: 0 15px 20px 0 rgba(0,0,0,0.6);
+}
+
+.upgrade-chunin:focus {
+    outline: none;
+}
+
+.upgrade-chunin img {
+    width: 200px;
+    height: auto;
+    display: block;
+}
+
+.upgrade-chunin:active {
+    transform: scale(0.97);
+}
+
+.upgrade-jounin {
+    background: none;
+    border: none;
+    display: block;
+    padding: 0;
+    box-shadow: 0 15px 20px 0 rgba(0,0,0,0.6);
+}
+
+.upgrade-jounin img {
+    width: 200px;
+    height: auto;
+    display: block;
+}
+
+.upgrade-jounin:active {
+    transform: scale(0.97);
+}
+
+.upgrade-hokage {
+    background: none;
+    border: none;
+    display: block;
+    padding: 0;
+    box-shadow: 0 15px 20px 0 rgba(0,0,0,0.6);
+}
+
+.upgrade-hokage img {
+    width: 200px;
+    height: auto;
+    display: block;
+}
+
+.upgrade-hokage:active {
+    transform: scale(0.97);
+}
+
+#upgrades-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    align-self: flex-start;
+    padding-top: 3%;
+    padding-right: 3%;
+}
+
+#genin-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#chunin-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#jounin-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#hokage-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: aliceblue;
+    text-shadow: 2px 2px 5px black;
+}
+
+.contador-cliques {
+    position: fixed;
+    top: 20px;
+    left: 755px;
+}
+
+
+.texto-custo {
+    color: aliceblue;
+    text-shadow: 1px 1px 4px black;
+    margin: 2px 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+.texto-falta {
+    color: #ffcc00;
+    text-shadow: 1px 1px 4px black;
+    margin: 2px 0;
+    font-size: 13px;
+    text-align: center;
+}
+
+
+#info-box {
+    position: fixed;
+    top: 80px;
+    left: 755px;
+    color: aliceblue;
+    text-shadow: 2px 2px 5px black;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+#info-box p {
+    margin: 4px 0;
+}
+
+
+#tela-final {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+}
+
+#caixa-final {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid aliceblue;
+    border-radius: 16px;
+    padding: 50px 60px;
+    text-align: center;
+    color: aliceblue;
+    text-shadow: 2px 2px 8px black;
+}
+
+#caixa-final h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+#caixa-final p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+#btn-reiniciar {
+    background: #ffcc00;
+    border: none;
+    padding: 14px 30px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#btn-reiniciar:hover {
+    background: #e6b800;
+}
+
+
+button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}

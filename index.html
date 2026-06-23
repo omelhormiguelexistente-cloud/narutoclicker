@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninja Career Clicker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="brr.js" defer></script>
+</head>
+
+<body>
+
+    
+    <div id="tela-final">
+        <div id="caixa-final">
+            <h1>🎉 Você virou Hokage! 🎉</h1>
+            <p>Parabéns! Você completou sua jornada ninja!</p>
+            <button id="btn-reiniciar">Jogar Novamente</button>
+        </div>
+    </div>
+
+    <button id="clicker" class="botao-clicador">
+        <img src="Rasengan.png">
+    </button>
+
+    <h1 id="click" class="contador-cliques">Chakra: <span id="count">0</span></h1>
+
+   
+    <div id="info-box">
+        <p id="info-multiplicador">Multiplicador atual: x1</p>
+        <p id="info-upgrades">Upgrades comprados: 0</p>
+    </div>
+
+    <div id="upgrades-container">
+
+        <div id="genin-div">
+            <button class="upgrade-genin" disabled id="geningenin">
+                <img src="Certificado.png">
+            </button>
+            <h1>Upgrade Genin</h1>
+            <p class="texto-custo">Custo: 50 chakra</p>
+            <p class="texto-falta" id="falta-genin">Falta 50 chakra</p>
+        </div>
+
+        <div id="chunin-div">
+            <button class="upgrade-chunin" disabled id="chuninchunin">
+                <img src="Colete.png">
+            </button>
+            <h1>Upgrade Chunin</h1>
+            <p class="texto-custo">Custo: 125 chakra</p>
+            <p class="texto-falta" id="falta-chunin">Falta 125 chakra</p>
+        </div>
+
+        <div id="jounin-div">
+            <button class="upgrade-jounin" disabled id="jouninjounin">
+                <img src="Shikaku.png">
+            </button>
+            <h1>Upgrade Jounin</h1>
+            <p class="texto-custo">Custo: 250 chakra</p>
+            <p class="texto-falta" id="falta-jounin">Falta 250 chakra</p>
+        </div>
+
+        <div id="hokage-div">
+            <button class="upgrade-hokage" disabled id="hokagehokage">
+                <img src="download (31).png">
+            </button>
+            <h1>Virar Hokage</h1>
+            <p class="texto-custo">Custo: 500 chakra</p>
+            <p class="texto-falta" id="falta-hokage">Falta 500 chakra</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
